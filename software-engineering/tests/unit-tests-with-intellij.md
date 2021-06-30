@@ -1,12 +1,22 @@
 # Unit Testing with IntelliJ Idea
 
+## Introduction: Code is fragile
+It's never too much to discuss the importance of writing tests before delivering any code.
+
+If you are a developer, you should know one thing. Code is fragile. Code is fragile by itself. You know that as well as I know, and there isn't much we can do. A single line of code you deliver today can put you in big problems tomorrow: emergency calls, work on weekends, and the so-called, so-feared War Rooms! 
+
+I hate being in a War-Room. It means poverty. Poor code. Poor deadlines. Garbage methodologies, often implemented by folks that don't know at all what agility means. Poor customers, not rarely. -- and other things that you can't control. Poor quality, which is not always on the *code*.
+
+But there is a thing we can do, so the problem (GitHub blame) is not on our side. We can assure our teammates that the code we wrote today works fine in a couple of scenarios. It means that the code has a minimum of coverage, sufficient *Test Cases*, which assures that the code won't fail in some foreseen contexts when fed by a range of known parameters.
+
+Let's start simple, covering the code with tests. Not only tests but Unit Tests. Well-written tests are most able to guarantee the *quality* of what we're delivering. Here, let me quote this:
+
+> As the number of quality grows, the number of War-Rooms decreases.
+
+Yep! Code is fragile. But I assure you that uncovered code is even worst.
+
 ## The principle of Unit Testing
-It's never too much to discuss the importance of writing tests before delivering any code. -- by *delivering*, assume that this code will be used by someone, being exposed to different scenarios and interactions. It would allow the user to send different parameters, maybe in an inappropriate order or in an inappropriate way, thus breaking the code unexpectedly.
 
- Ideally, the developers would do so, going even further: writing their tests yet before working on the code itself. That would be good.
-
-But unfortunately, in many scenarios, developers are too far from reaching the level of maturity in which they would always look for the correct implementation of TDD (Test-Driven Design) workflow. That's why I've decided to avoid writing about this exciting topic today. Let's start simple.
-Covering the code with tests -- not only tests but the unit, well-written tests. -- is extremely important to guarantee the quality of what you're delivering. Don't believe in me. If you think that the code you write, the same code that someday will be deployed in production, being used by hundreds, thousands of users, doesn't necessarily *need* to be tested, then you're fine. Keep going on your own, and I truly hope that nothing goes wrong. However, it's my moral obligation to advise you: uncovered code is the most expensive, and dangerous code you'll always deliver to your customers.
 
 // Great, now let's dive into the concept of unit testing.
 
